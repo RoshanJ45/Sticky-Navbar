@@ -1,0 +1,68 @@
+<html>
+<body>
+<div class="navtop">
+<p>top bar</p>
+</div>
+<nav class="navbar">
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+</ul>
+</nav>
+<div class="content">
+<h1>Welcome to the Page</h1>
+<p>Scroll down to see the sticky navbar in action.</p>
+<p style="height: 2000px;">More content...</p>
+</div>
+<style>
+    *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+body {
+background: #f4f4f4;
+text-align: center;
+}
+.navtop{
+padding: 15px;
+background-color: white;
+}
+.navbar {
+position: sticky;
+top: 0;
+width: 100%;
+background: #333;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+z-index: 1000;
+}
+.nav-links {
+list-style: none;
+display: flex;
+}
+.nav-links li {
+margin: 0 15px;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 1em;
+padding: 5px 10px;
+transition: 0.3s;
+}
+.nav-links a:hover {
+background: #555;
+border-radius: 5px;
+}
+.content{
+padding: 20px;
+}
+</style>
+</body>
+</html>
